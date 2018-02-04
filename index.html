@@ -19,9 +19,6 @@
 <div  class="own-nav navbar navbar-fixed" role="navigation">
 		<nav id="nav" style="height:100px;">
 <div style="background-color:#f7f7f7; height:30px;">
-<div class="container">
-    <a class="fs-12 right" style="color: #5a5a5a;height: 30px; margin-top: -15px;" href="http://app.innorders.com:8080/signin">Iniciar Sesión</a>
-</div>
 </div>
 			 <div class="container nav-wrapper">
 		      <a href="http://innorders.com/" class="brand-logo bebas">
@@ -29,7 +26,6 @@
                       </a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
 <li class="bebas"><a class="fs-12" onclick=" $('html, body').animate({scrollTop: $('#service').offset().top}, 1200);" >Servicios</a></li>
- <li class="bebas"><a class="fs-12" href="http://innorders.com/acerca.html">Acerca de</a></li>
                         <li class="bebas">
   <!--a class="fs-12"  href="http://innorders.com/planes.html" onclick=" $('html, body').animate({scrollTop: $('#plan').offset().top}, 1200);" >Planes</a></li-->
 		        <li class="bebas"><a class="fs-12" onclick=" $('html, body').animate({scrollTop: $('#contact').offset().top}, 1200);">Contáctanos</a></li>
@@ -45,11 +41,9 @@
 <script>
 function collapseNavbar() {
     if ($("#nav").offset().top > 50) {
-console.log($("#nav").offset().top + "ENTRO");
         $(".navbar-fixed").addClass("top-nav-collapse");
         $(".navbar-fixed").removeClass("own-nav");
     } else {
-console.log("NO ENTRO");
         $(".navbar-fixed").removeClass("top-nav-collapse");
         $(".navbar-fixed").addClass("own-nav");
     }
@@ -84,7 +78,7 @@ $(document).ready(collapseNavbar);
 <div class="col l12">
 				<ul class="timeline">
         <li class="timeline-inverted">          
-	  <img class="time-img" src="../img/icono_inventario.png">		
+	  <img class="time-img" src="img/icono_inventario.png">		
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -94,7 +88,7 @@ $(document).ready(collapseNavbar);
           </div>
         </li>
         <li class="timeline-inverted">          
-	  <img class="time-img" src="../img/icono_personal.png">		
+	  <img class="time-img" src="img/icono_personal.png">		
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -104,7 +98,7 @@ $(document).ready(collapseNavbar);
           </div>
         </li>
         <li class="timeline-inverted">          
-	  <img class="time-img" src="../img/icono_ordenes.png">	
+	  <img class="time-img" src="img/icono_ordenes.png">	
           <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
           <div class="timeline-panel">
             <div class="timeline-heading">
@@ -127,25 +121,25 @@ $(document).ready(collapseNavbar);
            <div class="col l12 s12" style="padding-left: 140px;">
       				<div class="col s12 l4 center">
       					<div>
-      						<img class="sev-img" src="../img/tiempo.png">						
+      						<img class="sev-img" src="img/tiempo.png">						
       					</div>
       					<p class="relaway fs-10">Mejora los tiempo en la toma de las ordenes de los domicilios</p>
       				</div>
       				<div class="col s12 l4 center">
       					<div>
-      						<img class="sev-img" src="../img/ordenes.png">						
+      						<img class="sev-img" src="img/ordenes.png">						
       					</div>
       					<p class="relaway fs-10">Lleva un registro de las ordenes de tus clientes</p>
       				</div>
       				<div class="col s12 l4 center">
       					<div>
-      						<img class="sev-img" src="../img/ruta.png">						
+      						<img class="sev-img" src="img/ruta.png">						
       					</div>
       					<p class="relaway fs-10">Enruta de manera adecuada tus domicilios</p>
       				</div>
               </div>
               <div class="col l4" style="position: absolute;margin-top: 300px;">
-                <img src="../img/phone.png" style="width:325px;">
+                <img src="img/phone.png" style="width:325px;">
               </div>
 			</div>
 		</div>
@@ -163,7 +157,7 @@ $(document).ready(collapseNavbar);
           <p class="bebas fs-10">Lleva tu menú tradicional a la era digital, toma las ordenes en línea desde cualquier dispositivo.</p>
         </div>
         <div class="col l6">
-         <img src="../img/ipad.png" style="width:400px;"/>
+         <img src="img/ipad.png" style="width:400px;"/>
         </div>
         <div class="col l3 center">
           <h5 class="bebas txt-blue">Menú <br> virtual</h5>
@@ -244,9 +238,9 @@ $(document).ready(collapseNavbar);
               <div class="col l3 ">
                 <h6 class="bebas">Síguenos:</h6>
                 <ul>
-                  <li style="display:inline-block"><a href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
-                  <li style="display:inline-block"><a href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
-                  <li style="display:inline-block"><a href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
+                  <li style="display:inline-block"><a target="_blank" href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
+                  <li style="display:inline-block"><a target="_blank" href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
+                  <li style="display:inline-block"><a target="_blank" href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
                 </ul>
               </div>
            <div class="col l3 s12 offset-l2 s12">
@@ -261,7 +255,6 @@ $(document).ready(collapseNavbar);
           <div class="footer-copyright">
             <div class="container">
             © 2016 Copyright
-            <a class="grey-text text-lighten-4 right" href="http://app.myeagle.co/">Producto Eagle</a>
             </div>
           </div>
         </footer>
