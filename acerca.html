@@ -1,0 +1,162 @@
+<html>
+<head>
+  	<meta name="fragment" content="!">
+  	<meta charset="utf-8"/>
+  	<title>InnOrders</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+	<meta name="description" content="Restaurante Eagle, permite gestionar los domicilios de los cliente.">
+	<meta name="keywords" content="comida, orden, domicilio">
+	<meta name="author" content="Eagle Corporation">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png?v1" sizes="16x16 32x32 64x64">
+       <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+<section id="acercade">
+<div  class="own-nav navbar navbar-fixed" role="navigation">
+		<nav id="nav" style="height:100px;">
+<div style="background-color:#f7f7f7; height:30px;">
+<div class="container">
+    <a class="fs-12 right" style="color: #5a5a5a;height: 30px; margin-top: -15px;" href="http://app.innorders.com:8080/signin">Iniciar Sesión</a>
+</div>
+</div>
+			 <div class="container nav-wrapper">
+		      <a href="http://innorders.com/" class="brand-logo bebas">
+                         <img src="./img/logo.png" style="width: 190px; margin-top: 5px;">
+                      </a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li class="bebas"><a class="fs-12" href="http://innorders.com/#service">Servicios</a></li>
+ <li class="bebas"><a class="fs-12" style="color:#ffc01b !important" href="http://innorders.com/acerca.html">Acerca de</a></li>
+                        <!--li class="bebas">
+                        <a class="fs-12"  href="http://innorders.com/planes.html" >Planes</a></li-->
+		        <li class="bebas"><a class="fs-12" href="http://innorders.com/#contact">Contáctanos</a></li>
+<!-- <li class="bebas"><a class="fs-12" href="http://app.innorders.com/signin">Blog</a></li> -->
+		        <li class="bebas">
+ <a href="http://innorders.com/piloto.html" class="btn bebas left col s12 l5 btn-more" style="margin-top: 10px; margin-left:20px;  text-transform: capitalize;
+">Solicitud Piloto</a></li>
+		      </ul>
+		    </div>
+		</nav>
+</div>
+<script>
+function collapseNavbar() {
+    if ($("#nav").offset().top > 50) {
+console.log($("#nav").offset().top + "ENTRO");
+        $(".navbar-fixed").addClass("top-nav-collapse");
+        $(".navbar-fixed").removeClass("own-nav");
+    } else {
+console.log("NO ENTRO");
+        $(".navbar-fixed").removeClass("top-nav-collapse");
+        $(".navbar-fixed").addClass("own-nav");
+    }
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+</script>
+</section>
+<section >
+ <div class="container">
+  <div class="row">
+    <div class="col l12 center">
+    <h1 class="relaway">¿Quienes Somos?<hr class="line"></h1>        
+    <div class="col l6 s12">
+    <img src="../img/img_quienessomos.png" style="width: 460px;"/>
+   </div> 
+   <div class="col l6 s12">
+	<p class="bebas" style="text-transform: inherit !important;">Somos una empresa dedicada a llevar la tecnología a su restaurante. Teniendo en cuenta no solo las necesidades de su negocio, sino también las últimas tendencias de la tecnología y experiencia gastronómica, con el fin de que pueda brindar el mejor servicio al cliente.</p>
+    </div>
+    </div>
+  </div>
+ </div>
+</section>
+<section id="team" class="team">
+  <div class="container">
+   <div class="row">
+    <div class="col l12 center">
+	<h1 class="relaway">Nuestro Equipo<hr class="line"></h1>
+        <h6 class="relaway">InnOrders cuenta con un equipo totalmente preparado para resolver todos tus problemas</h6>
+    </div>
+    <div class="col l12" style="margin-top:25px;">
+    <div class="col l3 center">
+   <a href="https://co.linkedin.com/in/phndavid">
+     <img src="./img/icono_ceo.png" class="img-team"/>
+      <h5 class="bebas" style="color:#fff;">Nelson D. <br> <h6 class="bebas" style="color:#fff;">Padilla</h6></h5> 
+      <p class="bebas" style="color:#000;">CEO <br> Co-fundador</p>
+    </a>
+    </div>
+    <div class="col l3 center">
+     <a href="https://co.linkedin.com/in/david-quinonez"><img src="./img/icono_desarrollador.png" class="img-team"/>
+     <h5 class="bebas" style="color:#fff;">David <br> <h6 class="bebas" style="color:#fff;">Quiñónez</h6></h5> 
+      <p class="bebas" style="color:#000;">Desarrollador<br> Co-fundador</p>
+   </a>
+    </div>
+    <div class="col l3 center">
+     <a href="https://cy.linkedin.com/in/karol-giraldo-escobar"><img src="./img/icono_diseñador.png" class="img-team"/>
+     <h5 class="bebas" style="color:#fff;">Karol<br> <h6 class="bebas" style="color:#fff;">Giraldo</h6></h5> 
+      <p class="bebas" style="color:#000;">Diseñadora<br> Co-fundador</p>
+    </a>
+    </div>
+    <div class="col l3 center">
+     <a href="https://co.linkedin.com/in/santiagodelosrios"><img src="./img/icono_desarrollador.png" class="img-team"/>
+      <h5 class="bebas" style="color:#fff;">Santiago<br> <h6 class="bebas" style="color:#fff;">De Los Ríos</h6></h5> 
+      <p class="bebas" style="color:#000;">Desarrollador<br> Co-fundador</p> 
+    </a>
+    </div>
+   </div>
+   </div>
+  </div>
+</section>
+	
+<section id="support">
+<div class="container">
+<div class="row">
+  <div class="col l12">
+      <img src="./img/alianza.jpg" style="max-width: 100%; height: auto;"/>
+  </div>
+</div>
+</div>
+</section>
+	<footer class="page-footer" style="background-color: #ffc01b; margin-top: 0px;">
+          <div class="container">
+            <div class="row">              
+              <div class="col l3 ">
+                <h6 class="bebas">Síguenos:</h6>
+                <ul>
+                  <li style="display:inline-block"><a href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
+                </ul>
+              </div>
+           <div class="col l3 s12 offset-l2 s12">
+               <h6 class="bebas">Colombia</h6>
+               <p class="white-text bebas">Calle 18 No. 122-135 Pance</p>
+               <p class="white-text bebas">+57 318 490 8362</p>
+               <p class="white-text bebas">+57 318 774 0465</p>
+               <p class="white-text bebas">Cali</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright
+            <a class="grey-text text-lighten-4 right" href="http://app.myeagle.co/">Producto Eagle</a>
+            </div>
+          </div>
+        </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92498902-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

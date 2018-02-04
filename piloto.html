@@ -1,0 +1,132 @@
+<html>
+<head>
+  	<meta name="fragment" content="!">
+  	<meta charset="utf-8"/>
+  	<title>InnOrders</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+	<meta name="description" content="Restaurante Eagle, permite gestionar los domicilios de los cliente.">
+	<meta name="keywords" content="comida, orden, domicilio">
+	<meta name="author" content="Eagle Corporation">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png?v1" sizes="16x16 32x32 64x64">
+       <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+<section id="piloto">
+<div  class="own-nav navbar navbar-fixed" role="navigation">
+		<nav id="nav" style="height:100px;">
+<div style="background-color:#f7f7f7; height:30px;">
+<div class="container">
+    <a class="fs-12 right" style="color: #5a5a5a;height: 30px; margin-top: -15px;" href="http://app.innorders.com/signin">Iniciar Sesión</a>
+</div>
+</div>
+			 <div class="container nav-wrapper">
+		      <a href="http://innorders.com/" class="brand-logo bebas">
+                         <img src="./img/logo.png" style="width: 190px; margin-top: 5px;">
+                      </a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li class="bebas"><a class="fs-12" href="http://innorders.com/#service">Servicios</a></li>
+ <li class="bebas"><a class="fs-12" href="http://innorders.com/acerca.html">Acerca de</a></li>
+                        <li class="bebas"><a class="fs-12"  href="http://innorders.com/planes.html" >Planes</a></li>
+		        <li class="bebas"><a class="fs-12" href="http://innorders.com/#contact">Contáctanos</a></li>
+<!-- <li class="bebas"><a class="fs-12" href="http://app.innorders.com/signin">Blog</a></li>-->
+		        <li class="bebas">
+ <button class="btn bebas left col s12 l5 btn-more" style="margin-top: 10px; margin-left:20px;  text-transform: capitalize;">Solicitud Piloto</button></li>
+		      </ul>
+		    </div>
+		</nav>
+</div>
+<script>
+function collapseNavbar() {
+    if ($("#nav").offset().top > 50) {
+console.log($("#nav").offset().top + "ENTRO");
+        $(".navbar-fixed").addClass("top-nav-collapse");
+        $(".navbar-fixed").removeClass("own-nav");
+    } else {
+console.log("NO ENTRO");
+        $(".navbar-fixed").removeClass("top-nav-collapse");
+        $(".navbar-fixed").addClass("own-nav");
+    }
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+</script>
+</section>
+
+	<div class="container">		
+		<div class="row">
+			<div class="col l7 center" style="margin-top: 40px;">
+				<img src="./img/login.gif" style="width: 525px;">
+			</div>
+			<div class="col l5 right" style="background-color: #f5f5f5; margin-top: 50px; border-radius: 5px; padding: 10px;">
+				<div class="col l12 center">
+				<img src="./img/logob.png" style="width: 280px;">							
+				</div>			
+				<form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s12">
+			          <input id="email" type="text" class="validate">
+			          <label for="email" class="bebas lbl-blue">Correo electrónico</label>
+			        </div>
+			        <div class="input-field col s12">
+			          <input id="password" type="password" class="validate">
+			          <label for="password" class="bebas lbl-blue">Contraseña</label>
+			        </div>
+			        <a href="" class="col l12 bebas"><p class="right" style="font-size: 8pt; margin-top: -8px;">¿Has olvidado tu contraseña?</p></a>
+			      </div>
+			      <button class="btn bebas js-signin btn-blue">Entrar</button>			        
+			    </form>
+          <img src="./img/avion.png" class="airplane-sign">
+			</div>
+			<div class="col l5 right" style="background-color: #f5f5f5; margin-top: 34px; border-radius: 5px; padding: 10px;">
+				<div class="center">
+				 <p class="bebas">¿No tienes cuenta? <a href="http://innorders.com/piloto.html" class="bebas">Solicitar Piloto</a></p>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+	
+<section id="support">
+<div class="container">
+<div class="row">
+  <div class="col l12">
+      <img src="./img/alianza.jpg" style="max-width: 100%; height: auto;"/>
+  </div>
+</div>
+</div>
+</section>
+	<footer class="page-footer" style="background-color: #ffc01b; margin-top: 0px;">
+          <div class="container">
+            <div class="row">              
+              <div class="col l3 ">
+                <h6 class="bebas">Síguenos:</h6>
+                <ul>
+                  <li style="display:inline-block"><a href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
+                </ul>
+              </div>
+           <div class="col l3 s12 offset-l2 s12">
+               <h6 class="bebas">Colombia</h6>
+               <p class="white-text bebas">Calle 18 No. 122-135 Pance</p>
+               <p class="white-text bebas">+57 318 490 8362</p>
+               <p class="white-text bebas">+57 318 774 0465</p>
+               <p class="white-text bebas">Cali</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright
+            <a class="grey-text text-lighten-4 right" href="http://app.myeagle.co/">Producto Eagle</a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>

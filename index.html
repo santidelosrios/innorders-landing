@@ -1,0 +1,279 @@
+<html>
+<head>
+  	<meta name="fragment" content="!">
+  	<meta charset="utf-8"/>
+  	<title>InnOrders</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+	<meta name="description" content="Somos una empresa dedicada a llevar la tecnología a su restaurante. Teniendo en cuenta no solo las necesidades de su negocio, sino también las últimas tendencias de la tecnología y experiencia gastronómica, con el fin de que pueda brindar el mejor servicio al cliente.">
+	<meta name="keywords" content="comida, orden, domicilio, logistica, restaurante, menú, virtual">
+	<meta name="author" content="Eagle Corporation">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png?v1" sizes="16x16 32x32 64x64">
+       <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+<section id="home">
+<div  class="own-nav navbar navbar-fixed" role="navigation">
+		<nav id="nav" style="height:100px;">
+<div style="background-color:#f7f7f7; height:30px;">
+<div class="container">
+    <a class="fs-12 right" style="color: #5a5a5a;height: 30px; margin-top: -15px;" href="http://app.innorders.com:8080/signin">Iniciar Sesión</a>
+</div>
+</div>
+			 <div class="container nav-wrapper">
+		      <a href="http://innorders.com/" class="brand-logo bebas">
+                         <img src="./img/logo.png" style="width: 190px; margin-top: 5px;">
+                      </a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li class="bebas"><a class="fs-12" onclick=" $('html, body').animate({scrollTop: $('#service').offset().top}, 1200);" >Servicios</a></li>
+ <li class="bebas"><a class="fs-12" href="http://innorders.com/acerca.html">Acerca de</a></li>
+                        <li class="bebas">
+  <!--a class="fs-12"  href="http://innorders.com/planes.html" onclick=" $('html, body').animate({scrollTop: $('#plan').offset().top}, 1200);" >Planes</a></li-->
+		        <li class="bebas"><a class="fs-12" onclick=" $('html, body').animate({scrollTop: $('#contact').offset().top}, 1200);">Contáctanos</a></li>
+ <!--<li class="bebas"><a class="fs-12" href="http://innorders.com/blog.html">Blog</a></li>-->
+		        <li class="bebas">
+ <button class="btn bebas left col s12 l5 btn-more" onclick=" $('html, body').animate({scrollTop: $('#contact').offset().top}, 1200);" style="
+    margin-top: 10px; margin-left:20px;  text-transform: capitalize;
+">Solicitud Piloto</button></li>
+		      </ul>
+		    </div>
+		</nav>
+</div>
+<script>
+function collapseNavbar() {
+    if ($("#nav").offset().top > 50) {
+console.log($("#nav").offset().top + "ENTRO");
+        $(".navbar-fixed").addClass("top-nav-collapse");
+        $(".navbar-fixed").removeClass("own-nav");
+    } else {
+console.log("NO ENTRO");
+        $(".navbar-fixed").removeClass("top-nav-collapse");
+        $(".navbar-fixed").addClass("own-nav");
+    }
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+</script>
+<div class="container" style="margin-top: 200px;">
+  <div class="row">
+    <div class="col l8 right" style="text-align: center; color:#ffc01b;">
+   <h3 class="relaway main-sentence" >¡Dile adiós a los vales de papel!</h3>
+   <p class="relaway sub-sentence">Realiza fácilmente el pedido de tus clientes desde un computador o tablet</p>
+   <div class="row">
+    <div class="col l8 s12 offset-l3">
+     <button class="btn bebas left col s12 l5 btn-more" onclick=" $('html, body').animate({scrollTop: $('#make').offset().top}, 1200);">Aprende Más</button>
+     <button class="btn bebas right col s12 l6 btn-him" onclick=" $('html, body').animate({scrollTop: $('#contact').offset().top}, 1200);">Solicita un Asesor</button>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+	</section>
+	<section id="make">
+		<div class="container service">
+			<div class="row">
+				<div class="col l12 center">
+					<h1 class="relaway">¿Qué hacemos?<hr class="line"></h1>  
+<p class="relaway fs-15">Sistema en línea que optimiza la gestión de pedidos de restaurantes, mejora la percepción y conocimiento del cliente.</p>
+				</div>
+<div class="col l12">
+				<ul class="timeline">
+        <li class="timeline-inverted">          
+	  <img class="time-img" src="../img/icono_inventario.png">		
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="bebas txt-blue">Controla tu inventario</h5>
+              <p class="relaway fs-15">Lleva un resgistro de los alimentos que vendes en tu restaurante</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">          
+	  <img class="time-img" src="../img/icono_personal.png">		
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="bebas txt-blue">Registra las Ordenes de tus clientes</h5>
+               <p class="relaway fs-15">Lleva un registro de las ordenes de tus clientes</p>
+            </div>
+          </div>
+        </li>
+        <li class="timeline-inverted">          
+	  <img class="time-img" src="../img/icono_ordenes.png">	
+          <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h5 class="bebas txt-blue">Gestiona el personal</h5>
+               <p class="relaway fs-15">Lleva un resgistro de las pesornas que te ayudan en tu restaurante</p>
+            </div>
+          </div>
+        </li>
+    </ul>
+</div>
+			</div>
+		</div>
+	</section>
+	<section id="profit">
+		<div class="container service">
+			<div class="row">
+				<div class="col l12 s12  center">
+					<h1 class="relaway">¡Beneficios para ti! <hr class="line"></h1>
+				</div>
+           <div class="col l12 s12" style="padding-left: 140px;">
+      				<div class="col s12 l4 center">
+      					<div>
+      						<img class="sev-img" src="../img/tiempo.png">						
+      					</div>
+      					<p class="relaway fs-10">Mejora los tiempo en la toma de las ordenes de los domicilios</p>
+      				</div>
+      				<div class="col s12 l4 center">
+      					<div>
+      						<img class="sev-img" src="../img/ordenes.png">						
+      					</div>
+      					<p class="relaway fs-10">Lleva un registro de las ordenes de tus clientes</p>
+      				</div>
+      				<div class="col s12 l4 center">
+      					<div>
+      						<img class="sev-img" src="../img/ruta.png">						
+      					</div>
+      					<p class="relaway fs-10">Enruta de manera adecuada tus domicilios</p>
+      				</div>
+              </div>
+              <div class="col l4" style="position: absolute;margin-top: 300px;">
+                <img src="../img/phone.png" style="width:325px;">
+              </div>
+			</div>
+		</div>
+	</section>
+  <section id="service">
+      <div class="container">
+      <div class="row">
+        <div class="col l12 s12  center" style="margin-top: 80px;">
+          <h1 class="relaway">Servicios<hr class="line"></h1>          
+        </div>
+       <div class="col l12">
+        <div class="col l3 center">
+          <h5 class="bebas txt-blue">Gestión de domicilios</h5>
+          <button class="btn bebas  btn-more">Detalles del Plan</button>
+          <p class="bebas fs-10">Lleva tu menú tradicional a la era digital, toma las ordenes en línea desde cualquier dispositivo.</p>
+        </div>
+        <div class="col l6">
+         <img src="../img/ipad.png" style="width:400px;"/>
+        </div>
+        <div class="col l3 center">
+          <h5 class="bebas txt-blue">Menú <br> virtual</h5>
+         <button class="btn bebas  btn-more">Detalles del Plan</button>
+          <p class="bebas fs-10">Gestión Interna del Restaurante,Enrutamiento de domicilarios y registro de órdenes en línea.</p>
+        </div>         
+       </div>
+      </div>
+    </div>
+  </section>
+	<section id="contact">
+	<div class="container contact">
+		 <div class="row">
+			 <div class="col l12 center" style="margin-top: 50px;">
+                             <h1 class="relaway">Solicitud de Asesor<hr class="line"></h1>  
+		             <h5 class="relaway">Comienza a hacer más eficiente tu restaurante con InnOrders</h5>
+			</div>
+			<div id="card-alert-s" class="card green lighten-5 col l6">
+              <div class="card-content green-text">
+                <p>ÉXITO: El mensaje ha sido enviado!</p>
+              </div>
+              <button type="button" class="close green-text" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+             </div>
+             <div id="card-alert-f" class="card red lighten-5 col l6">
+              <div class="card-content red-text">
+                <p>ERROR : El mensaje no fue enviado!</p>
+              </div>
+              <button type="button" class="close red-text" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+             </div>
+		    <form class="col s12" method="post" action="contact.php">
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <input id="first_name" type="text" name="u_name" class="validate">
+		          <label for="first_name" class="bebas">Nombres</label>
+		        </div>
+		        <div class="input-field col s6">
+		          <input id="last_name" type="text" name="u_lastname" class="validate">
+		          <label for="last_name" class="bebas">Apellidos</label>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="input-field col s6">
+		          <input id="email" type="email" name="u_email" class="validate">
+		          <label for="email" class="bebas">Correo electrónico</label>
+		        </div>
+                        <div class="input-field col s6">
+		          <input id="bono" type="text" name="u_bono" class="validate">
+		          <label for="bono" class="bebas">Teléfono</label>
+		        </div>
+		      </div>
+		      <div class="row">
+		        <div class="input-field col s12">
+		          <textarea id="message" name="u_mensaje" class="materialize-textarea"></textarea>
+		          <label for="message" class="bebas">Mensaje</label>
+		        </div>
+		      </div>
+		      <input type="submit" value="Enviar" class="btn bebas right js-email-contact" style="background-color: #ffc01b;"></input>
+		    </form>
+  		</div>
+  	</div>
+	</section>
+<section id="support">
+<div class="container">
+<div class="row">
+  <div class="col l12">
+      <img src="./img/alianza.jpg" style="max-width: 100%; height: auto;"/>
+  </div>
+</div>
+</div>
+</section>
+	<footer class="page-footer" style="background-color: #ffc01b; margin-top: 0px;">
+          <div class="container">
+            <div class="row">              
+              <div class="col l3 ">
+                <h6 class="bebas">Síguenos:</h6>
+                <ul>
+                  <li style="display:inline-block"><a href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
+                </ul>
+              </div>
+           <div class="col l3 s12 offset-l2 s12">
+               <h6 class="bebas">Colombia</h6>
+               <p class="white-text bebas">Calle 18 No. 122-135 Pance</p>
+               <p class="white-text bebas">+57 318 490 8362</p>
+               <p class="white-text bebas">+57 318 774 0465</p>
+               <p class="white-text bebas">Cali</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright
+            <a class="grey-text text-lighten-4 right" href="http://app.myeagle.co/">Producto Eagle</a>
+            </div>
+          </div>
+        </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92498902-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

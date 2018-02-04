@@ -1,0 +1,199 @@
+<html>
+<head>
+  	<meta name="fragment" content="!">
+  	<meta charset="utf-8"/>
+  	<title>InnOrders</title>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1" />
+	<meta name="description" content="Restaurante Eagle, permite gestionar los domicilios de los cliente.">
+	<meta name="keywords" content="comida, orden, domicilio">
+	<meta name="author" content="Eagle Corporation">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png?v1" sizes="16x16 32x32 64x64">
+       <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+<!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+</head>
+<body>
+<section id="planes">
+<div  class="own-nav navbar navbar-fixed" role="navigation">
+		<nav id="nav" style="height:100px;">
+<div style="background-color:#f7f7f7; height:30px;">
+<div class="container">
+    <a class="fs-12 right" style="color: #5a5a5a;height: 30px; margin-top: -15px;" href="http://app.innorders.com/signin">Iniciar Sesión</a>
+</div>
+</div>
+			 <div class="container nav-wrapper">
+		      <a href="http://innorders.com/" class="brand-logo bebas">
+                         <img src="./img/logo.png" style="width: 190px; margin-top: 5px;">
+                      </a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+<li class="bebas"><a class="fs-12" href="http://innorders.com/#service">Servicios</a></li>
+ <li class="bebas"><a class="fs-12" href="http://innorders.com/acerca.html">Acerca de</a></li>
+                        <li class="bebas"><a class="fs-12" style="color:#ffc01b !important" href="http://innorders.com/planes.html" >Planes</a></li>
+		        <li class="bebas"><a class="fs-12" href="http://innorders.com/#contact">Contáctanos</a></li>
+ <!--<li class="bebas"><a class="fs-12" href="http://app.innorders.com/signin">Blog</a></li> -->
+		        <li class="bebas">
+ <button class="btn bebas left col s12 l5 btn-more" style="margin-top: 10px; margin-left:20px;  text-transform: capitalize;
+">Solicitud Piloto</button></li>
+		      </ul>
+		    </div>
+		</nav>
+</div>
+<script>
+function collapseNavbar() {
+    if ($("#nav").offset().top > 50) {
+console.log($("#nav").offset().top + "ENTRO");
+        $(".navbar-fixed").addClass("top-nav-collapse");
+        $(".navbar-fixed").removeClass("own-nav");
+    } else {
+console.log("NO ENTRO");
+        $(".navbar-fixed").removeClass("top-nav-collapse");
+        $(".navbar-fixed").addClass("own-nav");
+    }
+}
+
+$(window).scroll(collapseNavbar);
+$(document).ready(collapseNavbar);
+
+</script>
+</section>
+<section >
+ <div class="container">
+  <div class="row">
+    <div class="col l12 center">
+    <h1 class="relaway">Planes<hr class="line"></h1>        
+    <div class="col l4 s12">
+     <h6 class="bebas" placeholder="First name" style="margin-bottom: 10%; background-color: grey; padding-bottom: 10%; padding-top: 10%;">Menú virtual</h6>
+     <h8 class="bebas" style="font-size: 11px;">Ingresa a tu menú de forma electrónica</h8>
+     <h6 class="bebas" style="margin-top: 10%;"><B>$1.680.000</B>/anuales</h6>
+     <HR width=60% align="center"> 
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Incluye: </h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 1</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 2</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 3</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 4</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 5</h6>
+     <button style="background-color: #ffc01b; padding: 5%; color: white; margin-bottom: 10%; margin-top: 5%;"> Adquiere el plan </button>
+   </div> 
+   <div class="col l4 s12">
+	<h6 class="bebas" style="margin-bottom: 10%; background-color: grey; padding-bottom: 10%; padding-top: 10%;">Premium</h6>
+	<h8 class="bebas" style="font-size: 11px;">Disfruta de los planes para mejorar la gestión remota de tu restaurante</h8>
+     <h6 class="bebas" style="margin-top: 4%;"><B>$3.240.000</B>/anuales</h6>
+     <HR width=60% align="center"> 
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Incluye: </h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 1</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 2</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 3</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 4</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 5</h6>
+     <button style="background-color: #ffc01b; padding: 5%; color: white; margin-bottom: 10%; margin-top: 5%;"> Adquiere el plan </button>
+    </div>
+   <div class="col l4 s12">
+	<h6 class="bebas" style="margin-bottom: 10%; background-color: grey; padding-bottom: 10%; padding-top: 10%;">Gestión de Domicilios</h6>
+	<h12 class="bebas" style="font-size: 11px;">Obten el control de tu personal domiciliario</h12>
+     <h6 class="bebas" style="margin-top: 10%;"><B>$1.680.000</B>/anuales</h6>
+     <HR width=60% align="center"> 
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Incluye: </h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 1</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 2</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 3</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 4</h6>
+     <h6 class="bebas" style="font-size: 11px; margin-top: 10%;">Caracteristica 5</h6>
+     <button style="background-color: #ffc01b; padding: 5%; color: white; margin-bottom: 10%; margin-top: 5%;"> Adquiere el plan </button>
+    </div>
+    </div>
+  </div>
+ </div>
+</section>
+<section id="ask" class="team">
+  <div class="container">
+   <div class="row">
+    <div class="col l8 offset-l4 center" style="margin-top: 70px;">
+	<h1 class="relaway" style="color: #fff;">Tus necesidades, nuestra prioridades</h1>        
+    </div>    
+   </div>
+  </div>
+</section>
+<section id="qa" class="team">
+  <div class="container">
+   <div class="row">
+    <div class="col l12 center">
+	<h1 class="relaway">Preguntas Frecuentes<hr class="line"></h1>                
+    </div> 
+   <div class="col l6 s12">
+     <h5 class="bebas">Pregunta 1</h5>
+<p class="relaway" style="text-align: justify;">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+        </p>
+   </div>
+   <div class="col l6 s12">
+    <h5 class="bebas">Pregunta 2</h5>
+<p class="relaway" style="text-align: justify;">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+        </p>
+   </div>
+   <div class="col l6 s12">
+     <h5 class="bebas">Pregunta 3</h5>
+<p class="relaway" style="text-align: justify;">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+        </p>
+   </div>
+   <div class="col l6 s12">
+     <h5 class="bebas">Pregunta 4</h5>
+<p class="relaway" style="text-align: justify;">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+        </p>
+   </div>
+   </div>
+  </div>
+</section>
+	
+<section id="support">
+<div class="container">
+<div class="row">
+  <div class="col l12">
+      <img src="./img/alianza.jpg" style="max-width: 100%; height: auto;"/>
+  </div>
+</div>
+</div>
+</section>
+	<footer class="page-footer" style="background-color: #ffc01b; margin-top: 0px;">
+          <div class="container">
+            <div class="row">              
+              <div class="col l3 ">
+                <h6 class="bebas">Síguenos:</h6>
+                <ul>
+                  <li style="display:inline-block"><a href="https://www.facebook.com/innorders/"><img src="./img/instagram.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://www.instagram.com/innorders/"><img src="./img/facebook.png"/></a></li>
+                  <li style="display:inline-block"><a href="https://goo.gl/9uKqFo"><img src="./img/linkedin.png"/></a></li>              
+                </ul>
+              </div>
+           <div class="col l3 s12 offset-l2 s12">
+               <h6 class="bebas">Colombia</h6>
+               <p class="white-text bebas">Calle 18 No. 122-135 Pance</p>
+               <p class="white-text bebas">+57 318 490 8362</p>
+               <p class="white-text bebas">+57 318 774 0465</p>
+               <p class="white-text bebas">Cali</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2016 Copyright
+            <a class="grey-text text-lighten-4 right" href="http://app.myeagle.co/">Producto Eagle</a>
+            </div>
+          </div>
+        </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-92498902-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
